@@ -1,4 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @charset "UTF-8";
+.auth-container {
+  max-width: 500px; }
+
+.auth-logo {
+  padding: 4rem 3rem 4rem 3rem; }
+
+.auth-form {
+  background-color: #3353b4;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center; }
+  .auth-form-title {
+    letter-spacing: 1.3px;
+    font-family: 'Montserrat', sans-serif; }
+
+.auth-input > input {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  color: #2588df;
+  background-color: #FFFFFF;
+  text-align: center; }
+
+.auth-button {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  color: #262626;
+  background-color: #FFFFFF;
+  text-align: center; }
+
+@media (max-width: 575.98px) {
+  :root {
+    font-size: 16px; } }
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 16px; } }
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px; } }
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px; } }
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 16px; } }
+
+h1 {
+  font-size: 6.3125rem; }
+
+h2 {
+  font-size: 3.9375rem; }
+
+h3 {
+  font-size: 3.125rem; }
+
+h4 {
+  font-size: 2.25rem; }
+
+h5 {
+  font-size: 1.5625rem; }
+
+h6 {
+  font-size: 1.3125rem; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+button {
+  border: none;
+  background: none; }
+
+button {
+  cursor: pointer;
+  font-family: inherit; }
+
+input {
+  border: none; }
+
+input, button:active, button:focus {
+  outline: none; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #262626; }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:hover {
+  color: #262626;
+  text-decoration: none; }
+
 .ProseMirror {
   position: relative; }
 
@@ -291,4 +397,28 @@ li.ProseMirror-selectednode:after {
 
 .ProseMirror p {
   margin-bottom: 1em; }
+
+.color-white {
+  color: #fff; }
+
+.icon, .icon-std {
+  background-size: contain; }
+  .icon-std {
+    width: 1.875rem;
+    height: 1.875rem; }
+
+.img-full-width {
+  width: 100%;
+  height: auto; }
+
+.ratio-1-1 {
+  position: relative;
+  padding-bottom: 100%; }
+
+.ratio-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 

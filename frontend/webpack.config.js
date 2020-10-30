@@ -37,8 +37,8 @@ module.exports = {
             filename: 'css/app.min.css'
         }),
         new HtmlWebpackPlugin({
-            template: './app/src/index.php',
-            filename: 'index.php',
+            template: './app/src/auth.html',
+            filename: 'auth.html',
             publicPath: '/'
         })
     ]
