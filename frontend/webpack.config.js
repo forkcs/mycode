@@ -1,15 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: [
-        './app/src/index.js',
+        './app/src/scripts/login.js',
+        './app/src/scripts/register.js',
         './app/src/styles/app.scss'
     ],
     output: {
-        path: path.resolve(__dirname, './app/public_html'),
-        filename: 'js/index.min.js'
+        path: path.resolve(__dirname, './app/static'),
+        filename: 'js/[name].min.js'
     },
     module: {
         rules: [
@@ -35,11 +35,6 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'css/app.min.css'
-        }),
-        new HtmlWebpackPlugin({
-            template: './app/src/auth.html',
-            filename: 'auth.html',
-            publicPath: '/'
         })
     ]
 };
