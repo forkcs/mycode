@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,16 +8,19 @@
         <title></title>
 
         <!-- libs -->
-        <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
     <body>
         <section id="authSection">
             <div class="container auth-container mb-5">
                 <div class="auth-logo">
-                    <img class="img-full-width" src="/resources/images/logo.png" alt="logo">
+                    <img class="img-full-width" src="{% static 'resources/images/logo.png' %}" alt="logo">
                 </div>
                 <div class="auth-form">
                     <h5 class="color-white auth-form-title mb-4">Регистрация</h5>
                     <form action="#">
+                        {% csrf_token %}
                         <div class="color-white text-left ml-2 mb-1">Имя</div>
                         <div class="auth-input mb-2">
                             <input type="text" name="name" value="">
@@ -48,7 +52,9 @@
         </section>
 
         <!-- libs -->
-        <script src="/libs/jquery/jquery.min.js"></script>
-        <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/libs/lazyload/jquery.lazy.min.js"></script>
+        <script src="{% static 'libs/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'libs/lazyload/jquery.lazy.min.js' %}"></script>
+
+        <script src="{% static 'js/register.min.js' %}"></script>
 </html>

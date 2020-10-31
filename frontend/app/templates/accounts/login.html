@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,13 +8,15 @@
         <title></title>
 
         <!-- libs -->
-        <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
     </head>
     <body>
         <section id="authSection">
             <div class="container auth-container">
                 <div class="auth-logo">
-                    <img class="img-full-width" src="/resources/images/logo.png" alt="logo">
+                    <img class="img-full-width" src="{% static 'resources/images/logo.png' %}" alt="logo">
                 </div>
                 <div class="auth-form">
                     <h5 class="color-white auth-form-title mb-4">Авторизация</h5>
@@ -31,8 +34,10 @@
         </section>
 
         <!-- libs -->
-        <script src="/libs/jquery/jquery.min.js"></script>
-        <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/libs/lazyload/jquery.lazy.min.js"></script>
+        <script src="{% static 'libs/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'libs/lazyload/jquery.lazy.min.js' %}"></script>
+
+        <script src="{% static 'js/login.min.js' %}"></script>
     </body>
 </html>
