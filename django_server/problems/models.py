@@ -20,7 +20,7 @@ class Problem(models.Model):
     tests = models.CharField(max_length=1000)
 
     def __str__(self):
-        pass
+        return self.title
 
 
 PROBLEM_STATUSES = (
