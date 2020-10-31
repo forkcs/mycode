@@ -13,6 +13,7 @@ class RegisterForm(ModelForm):
     class Meta:
         model = Account
         fields = '__all__'
+        exclude = 'user',
 
     username = UsernameField()
     password1 = CharField(min_length=8, required=True)
