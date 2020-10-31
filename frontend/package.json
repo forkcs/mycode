@@ -1,0 +1,31 @@
+{
+  "name": "geosas-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "author": "Sergey Borisov, Fedor Soldatkin",
+  "license": "ISC",
+  "dependencies": {
+    "prosemirror-example-setup": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^6.8.0",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.1",
+    "mini-css-extract-plugin": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "prosemirror-schema-basic": "^1.1.2",
+    "sass-loader": "^10.0.4",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0"
+  }
+}

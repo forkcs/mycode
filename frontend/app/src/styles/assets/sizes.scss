@@ -1,0 +1,32 @@
+$input_padding: 0.25rem;
+$border_radius: 1rem;
+
+@mixin screen-xs {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@mixin screen-sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin screen-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin screen-xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
