@@ -14,7 +14,7 @@ class RegisterView(FormView):
     success_url = '/'
 
     def get(self, request, *args, **kwargs):
-        if not self.request.user.is_authenticated():
+        if not self.request.user.is_authenticated:
             return redirect(self.get_success_url())
         return super(RegisterView, self).get(request, *args, **kwargs)
 
