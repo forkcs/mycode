@@ -43,4 +43,4 @@ class Solution(models.Model):
     score = models.PositiveIntegerField(null=True, blank=True, default=0)
 
     def __str__(self):
-        pass
+        return str(self.id)
