@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         login: './app/src/scripts/login.js',
         register: './app/src/scripts/register.js',
+        problems_student: './app/src/scripts/problems_student.js',
         style: './app/src/styles/app.scss'
     },
     output: {

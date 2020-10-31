@@ -2,36 +2,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @charset "UTF-8";
-.auth-container {
-  max-width: 500px; }
-
-.auth-logo {
-  padding: 4rem 3rem 4rem 3rem; }
-
-.auth-form {
-  background-color: #3353b4;
-  border-radius: 2rem;
-  padding: 2rem;
-  text-align: center; }
-  .auth-form-title {
-    letter-spacing: 1.3px;
-    font-family: 'Montserrat', sans-serif; }
-
-.auth-input > input {
-  width: 100%;
-  border-radius: 2rem;
-  padding: 0.25rem;
-  color: #2588df;
-  background-color: #FFFFFF;
-  text-align: center; }
-
-.auth-button {
-  width: 100%;
-  border-radius: 0.5rem;
-  padding: 0.25rem;
-  color: #262626;
-  background-color: #FFFFFF;
-  text-align: center; }
+.header {
+  position: static;
+  top: 0;
+  height: 5rem; }
 
 @media (max-width: 575.98px) {
   :root {
@@ -104,6 +78,37 @@ ul, ol {
 a, a:hover {
   color: #262626;
   text-decoration: none; }
+
+.auth-container {
+  max-width: 500px; }
+
+.auth-logo {
+  padding: 4rem 3rem 4rem 3rem; }
+
+.auth-form {
+  background-color: #3353b4;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center; }
+  .auth-form-title {
+    letter-spacing: 1.3px;
+    font-family: 'Montserrat', sans-serif; }
+
+.auth-input > input {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  color: #2588df;
+  background-color: #FFFFFF;
+  text-align: center; }
+
+.auth-button {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  color: #262626;
+  background-color: #FFFFFF;
+  text-align: center; }
 
 .ProseMirror {
   position: relative; }

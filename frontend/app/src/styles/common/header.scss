@@ -1,0 +1,7 @@
+.header {
+    position: static;
+    top: 0;
+    height: 5rem;
+
+    @include surface-shadow;
+}
