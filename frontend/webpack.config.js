@@ -2,11 +2,11 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: [
-        './app/src/scripts/login.js',
-        './app/src/scripts/register.js',
-        './app/src/styles/app.scss'
-    ],
+    entry: {
+        login: './app/src/scripts/login.js',
+        register: './app/src/scripts/register.js',
+        style: './app/src/styles/app.scss'
+    },
     output: {
         path: path.resolve(__dirname, './app/static'),
         filename: 'js/[name].min.js'
