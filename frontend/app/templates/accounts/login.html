@@ -22,9 +22,6 @@
                     <h5 class="color-white auth-form-title mb-4">Авторизация</h5>
                     <form action="" method="post">
                         {% csrf_token %}
-                        {% for field in form %}
-                            {{ field.errors }}
-                        {% endfor %}
                         <div class="auth-input mb-4">
                             {{ form.username }}
                         </div>
