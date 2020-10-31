@@ -25,7 +25,7 @@ SECRET_KEY = 'lpxvm&3zmfk_i$&dag^jaizb+jlwj%9oiqq-2@j#)r1qo0*_pa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'django_server.accounts',
     'django_server.problems',
+
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'django_root.urls'
@@ -126,3 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = BASE_DIR.parent.joinpath('frontend/app/static'),
 
 STATIC_ROOT = BASE_DIR / 'static'
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": lambda r: True,
+}

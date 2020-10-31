@@ -22,15 +22,6 @@
                     <form action="" method="post">
                         {% csrf_token %}
 
-                        {% for field in form %}
-                            <div class="fieldWrapper">
-                                {{ field.errors }}
-                                {% if field.help_text %}
-                                <p class="help">{{ field.help_text|safe }}</p>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
-
                         <div class="color-white text-left ml-2 mb-1">Имя</div>
                         <div class="auth-input mb-2">
                             {{ form.first_name }}
@@ -79,4 +70,5 @@
         <script src="{% static 'libs/lazyload/jquery.lazy.min.js' %}"></script>
 
         <script src="{% static 'js/register.min.js' %}"></script>
+    </body>
 </html>
