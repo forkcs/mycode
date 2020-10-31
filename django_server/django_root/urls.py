@@ -24,5 +24,6 @@ urlpatterns = [
     path('__debug__/', include(debug_toolbar.urls)),
 
     # path('', redirect)
-    path('auth/', include('django_server.accounts.urls'))
+    path('auth/', include('django_server.accounts.urls')),
+    path('problems/', include('django_server.problems.urls')),
 ]
