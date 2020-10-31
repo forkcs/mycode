@@ -33,8 +33,10 @@ class RegisterView(FormView):
 
 class LogInView(LoginView):
     template_name = 'accounts/login.html'
-    success_url = '/'
     redirect_authenticated_user = True
+
+    def get_success_url(self):
+        return '/'
 
 
 class LogOutView(LogoutView):
