@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from django.views.generic import View, DetailView
 
-# Create your views here.
+from django_server.problems.models import Problem, Solution
+
+
+class ProblemView(DetailView):
+    context_object_name = 'problem'
+    model = Problem
+    pk_url_kwarg = 'id'
+
+    template_name = 'problems/problem.html'
