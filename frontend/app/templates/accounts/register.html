@@ -19,31 +19,53 @@
                 </div>
                 <div class="auth-form">
                     <h5 class="color-white auth-form-title mb-4">Регистрация</h5>
-                    <form action="#">
+                    <form action="" method="post">
                         {% csrf_token %}
+
+                        {% for field in form %}
+                            <div class="fieldWrapper">
+                                {{ field.errors }}
+                                {% if field.help_text %}
+                                <p class="help">{{ field.help_text|safe }}</p>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+
                         <div class="color-white text-left ml-2 mb-1">Имя</div>
                         <div class="auth-input mb-2">
-                            <input type="text" name="name" value="">
+                            {{ form.first_name }}
                         </div>
                         <div class="color-white text-left ml-2 mb-1">Фамилия</div>
                         <div class="auth-input mb-2">
-                            <input type="text" name="subname" value="">
+                            {{ form.last_name }}
                         </div>
                         <div class="color-white text-left ml-2 mb-1">Отчество</div>
                         <div class="auth-input mb-2">
-                            <input type="text" name="midname" value="">
+                            {{ form.middle_name }}
                         </div>
                         <div class="color-white text-left ml-2 mb-1">Дата рождения</div>
                         <div class="auth-input mb-2">
-                            <input type="text" name="birthday" value="">
+                            {{ form.birth_date }}
                         </div>
                         <div class="color-white text-left ml-2 mb-1">Образовательная организация</div>
                         <div class="auth-input mb-2">
-                            <input type="text" name="education" value="">
+                            {{ form.school_name }}
                         </div>
-                        <div class="color-white text-left ml-2 mb-1">Электронная почта</div>
+                        <div class="color-white text-left ml-2 mb-1">Имя пользователя</div>
+                        <div class="auth-input mb-2">
+                            {{ form.username }}
+                        </div>
+                        <div class="color-white text-left ml-2 mb-1">Пароль</div>
+                        <div class="auth-input mb-2">
+                            {{ form.password1 }}
+                        </div>
+                        <div class="color-white text-left ml-2 mb-1">Пароль повтор</div>
+                        <div class="auth-input mb-2">
+                            {{ form.password2 }}
+                        </div>
+                        <div class="color-white text-left ml-2 mb-1">Кто вы</div>
                         <div class="auth-input mb-5">
-                            <input type="text" name="email" value="">
+                            {{ form.account_type }}
                         </div>
                         <button class="auth-button" type="submit">Зарегистрироваться</button>
                     </form>
