@@ -11,6 +11,7 @@ LoginForm = AuthenticationForm
 
 class RegisterForm(ModelForm):
     class Meta:
+        model = Account
         fields = '__all__'
 
     username = UsernameField()
